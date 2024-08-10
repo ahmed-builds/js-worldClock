@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+* {
+    box-sizing: border-box;
+    transition: 0.3s all ease-in-out;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e2e44;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2f41;
+    box-shadow: 0 0 5px 4px inset #222430;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.clock, .dayData {
+    font-family: "Orbitron", sans-serif;
+}
+.clock {    
+    font-size: 1.2rem;
+    display: flex;
+    align-items: baseline;
+}
+#hr, #day {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #626fff;
+}
+#mn, #month {
+    font-size: 4rem;
+    color: #ff8f7b;
+}
+#sc, #year {
+    font-size: 2rem;
+    color: #626fff;
+}
+#hr::after {
+    content: ':';
+}
+#mn::after {
+    content: ':';
+}
+.form_control {
+    width: 100%;
+    padding: 0.5rem;
+}
+#countriesDropdown{
+    background-color: transparent;
+    color: #ffffff;
+}
+option {
+    background-color: #2e2e44;
+    color: #ffffff;
+}
+.dayData {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
